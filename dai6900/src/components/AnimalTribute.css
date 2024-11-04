@@ -1,0 +1,54 @@
+.animal-container {
+    margin: 20px;
+}
+
+.animal-entry {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.frame {
+    margin-right: 10px; /* Space between image and text */
+}
+
+.animal-image {
+    width: 100px; /* Adjust image size */
+    height: auto;
+}
+
+/* AnimalTribute.css */
+.frame {
+    border-radius: 10px; /* Rounded corners */
+    padding: 15px; /* Space around the image */
+    transition: transform 0.3s; /* Smooth scaling on hover */
+}
+
+.pulse-green {
+    border: 5px solid #00FF00; /* Neon green */
+    animation: pulse 1.5s infinite; /* Animation effect */
+}
+
+.pulse-red {
+    border: 5px solid #FF4500; /* Neon red */
+    animation: pulse 1.5s infinite;
+}
+
+.pulse-blue {
+    border: 5px solid #1E90FF; /* Neon blue */
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+
