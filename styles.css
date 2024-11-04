@@ -152,6 +152,10 @@ footer {
         font-size: 1rem; /* Smaller font size for links on mobile */
     }
 
+    .animal-entry {
+        flex: 1 1 45%; /* Allows two entries per row */
+    }
+
     .top-left-image {
         width: 80px; /* Resize top-left image for smaller screens */
     }
@@ -169,4 +173,9 @@ footer {
     .animal-image {
         width: 100px; /* Further reduce animal image size on small screens */
     }
+
+    .animal-entry {
+        flex: 1 1 100%; /* Stacks entries on top of each other on small screens */
+    }
+
 }
