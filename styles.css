@@ -124,6 +124,14 @@ img {
     color: #0081B0; /* Darker shade on hover */
 }
 
+.x-link {
+    color: #1DA1F2; /* Twitter blue color */
+    text-decoration: none; /* No underline */
+}
+
+.x-link:hover {
+    text-decoration: underline; /* Underline on hover */
+}
 .separator {
     width: 1px; /* Thickness of the separator */
     height: 24px; /* Height of the separator */
