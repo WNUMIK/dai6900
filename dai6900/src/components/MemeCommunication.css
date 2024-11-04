@@ -1,0 +1,34 @@
+.meme-communication {
+    background-color: #ff4757; /* Bright red for energy */
+    color: #ffffff; /* White text for high contrast */
+    font-size: 1.5rem; /* Slightly larger font size for better visibility */
+    font-family: 'Arial', sans-serif; /* Clean, readable font */
+    text-align: center; /* Center the text */
+    padding: 15px; /* Padding for spacing */
+    margin: 10px 0; /* Margin for spacing */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+    overflow: hidden; /* Prevent overflow */
+}
+
+.marquee {
+    display: inline-block; /* Allows for scrolling effect */
+    white-space: nowrap; /* Prevent text from wrapping */
+    animation: scroll 10s linear infinite; /* Animation */
+}
+
+@keyframes scroll {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}
+
+/* Pause on hover */
+.meme-communication:hover .marquee {
+    animation-play-state: paused; /* Pause the animation on hover */
+}
+
+/* Add a glow effect to the text */
+.marquee {
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.8), 0 0 10px rgba(255, 255, 255, 0.5); /* Soft glowing effect */
+    padding: 0 20px; /* Horizontal padding for better spacing */
+}

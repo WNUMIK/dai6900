@@ -18,3 +18,71 @@
 .icon-link img {
     height: 30px; /* Adjust icon size */
 }
+
+.nav-row {
+    display: flex;
+    justify-content: center; /* Centers the links */
+    padding: 10px 0; /* Adds some space around the links */
+    background-color: #f8f8f8; /* Light background color */
+}
+
+.nav-link {
+    margin: 0 15px; /* Space between links */
+    text-decoration: none; /* Removes underline */
+    color: #333; /* Link color */
+    font-weight: bold; /* Bold text */
+}
+
+.nav-link.buy {
+    color: #00ff00; /* Laser green for BUY link */
+    font-weight: bold; /* Make it stand out more */
+}
+
+.nav-link:hover {
+    color: #00ff00; /* Change color on hover to bright green */
+}
+
+.popup {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.popup-content {
+    background-color: #ffeb3b; /* Bright yellow for a meme vibe */
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.close {
+    cursor: pointer;
+    float: right;
+    font-size: 28px;
+    color: #333;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .main-header {
+        flex-direction: column; /* Stack items on smaller screens */
+        align-items: center; /* Center items */
+    }
+
+    .nav-row {
+        flex-direction: column; /* Stack links vertically */
+        align-items: center; /* Center links */
+    }
+
+    .nav-link {
+        margin: 5px 0; /* Adjust spacing between links */
+    }
+}
